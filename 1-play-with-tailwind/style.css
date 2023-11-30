@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .my-aa {
+    color: wheat;
+  }
+
+  .box {
+    width: 500px;
+    aspect-ratio: 1;
+  }
+
+  .my-text {
+      colgroup: red;
+  }
+}

@@ -1,9 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head class="dark">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom 1 : TailwindConfig -->
+    <!-- <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              sab: "#da373d",
+            },
+          },
+        },
+      };
+    </script> -->
+    
+    <!-- Custom 2 : Tailwind UtilitiesClass -->
+
+    <!-- Custom 3 : Your CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Custom 4 : Your CSS with TailwindClass -->
   </head>
-  <body></body>
+  <body>
+    <!-- JIT : Just in time Compilation -->
+    <div class="bg-slate-800 box hover:w-screen">
+      <h1
+        class="font-mono text-3xl font-thin my-aa underline underline-offset-8"
+      >
+        Hello!
+      </h1>
+
+      <h1
+        class="font-mono text-3xl font-thin my-text underline underline-offset-8"
+      >
+        Hello!
+      </h1>
+    </div>
+
+    <!-- Dark Mode -->
+    <!-- <div
+      class="bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl"
+    >
+      <div>
+        <span
+          class="inline-flex items-center justify-center p-2 bg-indigo-500 rounded-md shadow-lg"
+        >
+          <svg
+            class="h-6 w-6 text-white"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+          </svg>
+        </span>
+      </div>
+
+      <h3
+        class="text-slate-900 dark:text-white mt-5 text-base font-medium tracking-tight"
+      >
+        Writes Upside-Down
+      </h3>
+
+      <p class="text-slate-500 dark:text-slate-400 mt-2 text-sm">
+        The Zero Gravity Pen can be used to write in any orientation, including
+        upside-down. It even works in outer space.
+      </p>
+    </div> -->
+  </body>
 </html>
