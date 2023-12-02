@@ -3,7 +3,91 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Product Modal</title>
+
+    <!-- Custom 1 : TailwindConfig -->
+    <!-- <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              pink: "#ff49db",
+            },
+            boxShadow: {
+              "5xl": "0 10px 0 0 rgba(30,64,175,1)",
+            },
+          },
+        },
+      };
+    </script> -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body></body>
+  <body>
+    <main
+      class="content md:h-screen flex justify-center items-center bg-slate-100"
+    >
+      <article
+        class="card__container max-w-[900px] bg-white flex flex-col items-center sm:flex-row justify-center sm:items-start shadow-2xl rounded-2xl p-5 lg:p-16 gap-x-5"
+      >
+        <div class="img__container sm:w-2/5">
+          <img src="images/headphone.png" alt="headphone-img" />
+        </div>
+
+        <div class="content__container sm:w-3/5 flex flex-col gap-y-5">
+          <div class="shipping__container">
+            <p
+              class="shipping-text bg-black text-white inline px-3 py-1 rounded-full"
+            >
+              Free Shipping
+            </p>
+          </div>
+          <h2 class="product-name text-3xl mb-6">
+            Razer Kraken Kitty Edt Gaming Headset Quartz
+          </h2>
+
+          <p class="product-price-old line-through">$799</p>
+          <h3 class="product-price-new text-5xl font-semibold">$599</h3>
+
+          <p class="discount-time text-sm text-gray-400">
+            The Offer os valid until April 3 or as long as stock lasts!
+          </p>
+
+          <button
+            class="add-cart-btn bg-blue-500 hover:bg-blue-700 text-white rounded-md p-4 shadow-[0_8px_0_0_rgba(29,78,216,1)] hover:shadow-[0_9px_0_0_rgba(59,130,246,1)] mb-3 transition-all"
+          >
+            Add to cart
+          </button>
+
+          <div class="stock__container flex items-center gap-x-3">
+            <div
+              class="cycle bg-black w-[10px] h-[10px] rounded-full bg-green-400"
+            ></div>
+            <p class="stock-text">50+ pcs. in stock</p>
+          </div>
+
+          <div class="footer__content flex flex-col items-center sm:flex-row gap-4">
+            <div
+              class="weight-container flex justify-center items-center gap-x-4 border-2 rounded-md p-3 cursor-pointer hover:border-black transition-all w-full"
+            >
+              <div class="weight-img w-[30px]">
+                <img src="images/weight.png" alt="weight-img" />
+              </div>
+
+              <p class="weight-text text-center">Add to cart</p>
+            </div>
+            <div
+              class="wishlist__container flex justify-center items-center gap-x-4 border-2 rounded-md p-3 cursor-pointer hover:border-black transition-all w-full"
+            >
+              <div class="heart-img w-[30px]">
+                <img src="images/heart.png" alt="heart-img" />
+              </div>
+
+              <p class="wishlist-text text-center">Add to wishlist</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+  </body>
 </html>
